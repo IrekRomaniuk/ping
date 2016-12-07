@@ -12,6 +12,7 @@ import (
 	"net"
 	"os"
 	"time"
+	"fmt"
 )
 
 const (
@@ -34,6 +35,7 @@ type icmpMessageBody interface {
 }
 
 func main() {
+	fmt.Println("MAIN")
 	Ping("8.8.8.8",1000)
 	Ping("1.2.3.4",1000)
 }
