@@ -34,8 +34,8 @@ type icmpMessageBody interface {
 }
 
 func main() {
-	Ping("8.8.8.8",1)
-	Ping("1.2.3.4",1)
+	Ping("8.8.8.8",1000)
+	Ping("1.2.3.4",1000)
 }
 
 // Marshal returns the binary enconding of the ICMP echo request or
