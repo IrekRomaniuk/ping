@@ -8,7 +8,7 @@ import (
 )
 
 func TestPing(t *testing.T) {
-	// we try if we have setuid bit
+	// we try if we have setuid bit in Linux
 	syscall.Setuid(0)
 	Convey("Ping", t, func() {
 		//func Ping(address string, timeout int) bool
